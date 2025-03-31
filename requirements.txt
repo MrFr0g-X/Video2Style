@@ -1,0 +1,10 @@
+torch>=1.9.0
+diffusers>=0.16.0
+transformers>=4.25.0
+controlnet_aux>=0.0.6
+opencv-python>=4.7.0
+numpy>=1.23.0
+Pillow>=9.0.0
+moviepy>=1.0.3
+tqdm>=4.65.0
+accelerate>=0.20.0
