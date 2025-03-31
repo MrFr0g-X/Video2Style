@@ -117,10 +117,6 @@ The process works by:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - [Stable Diffusion](https://github.com/CompVis/stable-diffusion) by CompVis
