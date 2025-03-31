@@ -27,7 +27,8 @@ class SketchStylizer:
             device (str): Device to run inference on ("cpu" or "cuda")
         """
         # Initialize Canny edge detector for sketch style conditioning
-        self.canny_detector = CannyDetector.from_pretrained("lllyasviel/Annotators")
+        # CannyDetector doesn't use from_pretrained - initialize directly
+        self.canny_detector = CannyDetector()
         
         # Load ControlNet for Canny edge control
         controlnet = load_controlnet("lllyasviel/sd-controlnet-canny")
@@ -65,7 +66,14 @@ class SketchStylizer:
             frame = Image.fromarray(np.uint8(frame))
         
         # Generate Canny edge map with appropriate thresholds
-        edge_map = self.canny_detector(frame, low_threshold=100, high_threshold=200)
+        # CannyDetector expects numpy array input, not PIL Image
+        frame_np = np.array(frame)
+        edge_map = self.canny_detector(frame_np, low_threshold=100, high_threshold=200)
+        
+        # Convert back to PIL Image if needed
+        if isinstance(edge_map, np.ndarray):
+            edge_map = Image.fromarray(edge_map)
+            
         return edge_map
 
     def stylize(self, frame, control_image, prompt):

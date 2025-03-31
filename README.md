@@ -1,6 +1,6 @@
 # Video2Style
 
-![Video2Style Banner](https://i.imgur.com/HZTuZgr.png)
+![Video2Style Banner](https://i.imgur.com/G3vx3ed.jpeg)
 
 Video2Style is an AI-powered video transformation tool that converts regular videos into artistic styles like anime, sketch, or cinematic using Stable Diffusion and ControlNet.
 
@@ -29,7 +29,7 @@ See [requirements.txt](requirements.txt) for full dependencies.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/Video2Style.git
+   git clone https://github.com/MrFr0g-X/Video2Style.git
    cd Video2Style
    ```
 
@@ -88,7 +88,8 @@ optional arguments:
 
 | Original | Anime Style | Sketch Style | Cinematic Style |
 |----------|-------------|--------------|-----------------|
-| ![Original](https://i.imgur.com/example1_orig.jpg) | ![Anime](https://i.imgur.com/example1_anime.jpg) | ![Sketch](https://i.imgur.com/example1_sketch.jpg) | ![Cinematic](https://i.imgur.com/example1_cinematic.jpg) |
+| ![Original](https://i.imgur.com/Rgy5sbA.png) | ![Anime](https://i.imgur.com/NH3rWiA.png) | ![Sketch](https://i.imgur.com/EJyMd1F.png) | ![Cinematic](https://i.imgur.com/lUe2QH8.png) |
+| Original video | *"anime style, Studio Ghibli, detailed, vibrant colors"* | *"pencil sketch, detailed shading, professional drawing"* | *"cinematic scene, professional cinematography, movie still"* |
 
 ## 📝 How It Works
 
